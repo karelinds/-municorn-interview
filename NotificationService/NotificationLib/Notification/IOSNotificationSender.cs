@@ -3,7 +3,7 @@ using NotificationLib.Message;
 
 namespace NotificationLib.Notification
 {
-    public class IosNotificationSender : NotificationSenderBase<IosMessage>
+    public class IosNotificationSender : NotificationSenderBase<IosNotificationMessage>
     {
         public IosNotificationSender(ILogger<IosNotificationSender> logger) : base(logger)
         {

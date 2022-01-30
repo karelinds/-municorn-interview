@@ -1,10 +1,12 @@
 using System.Linq;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using NotificationLib.Message;
 using NotificationService.ControllerFactory;
 
 namespace NotificationService
@@ -23,7 +25,9 @@ namespace NotificationService
         {
             services.AddNotificationsSender();
             services.AddRouting();
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(fv =>
+                    fv.RegisterValidatorsFromAssemblyContaining<NotificationMessage>(lifetime: ServiceLifetime.Singleton));
 
             services.AddMvc(o =>
                 {

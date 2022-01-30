@@ -3,7 +3,7 @@ using NotificationLib.Message;
 
 namespace NotificationLib.Notification
 {
-    public class AndroidNotificationSender : NotificationSenderBase<AndroidMessage>
+    public class AndroidNotificationSender : NotificationSenderBase<AndroidNotificationMessage>
     {
         public AndroidNotificationSender(ILogger<AndroidNotificationSender> logger) : base(logger)
         {
