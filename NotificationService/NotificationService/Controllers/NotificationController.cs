@@ -4,7 +4,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using NotificationLib;
 using NotificationLib.Message;
 using NotificationService.Services;
 

@@ -6,7 +6,7 @@ using NotificationLib.Notification;
 namespace NotificationLib.Repository
 {
     //note: мы не сохраняем само сообщение, т.к. в тз это не требуется.
-    //Если же это потребудется, то сами сообщения лучше хранить в отдельной бд/таблице.
+    //Если же это потребудется, то сами сообщения лучше хранить в отдельном хранилище.
     public interface INotificationStatusRepository
     {
         Task SaveNotificationStatusAsync(DeliveryResult deliveryResult,
