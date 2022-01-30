@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NotificationLib;
 using NotificationLib.Notification;
+using NotificationLib.Repository;
 
 namespace NotificationService.Controllers
 {

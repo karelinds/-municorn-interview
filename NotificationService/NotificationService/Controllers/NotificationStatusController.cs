@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using NotificationLib;
 using NotificationLib.Message;
 using NotificationLib.Notification;
+using NotificationLib.Repository;
 
 namespace NotificationService.Controllers
 {

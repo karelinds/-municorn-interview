@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NotificationLib;
 using NotificationLib.Message;
 using NotificationLib.Notification;
+using NotificationLib.Repository;
 using NotificationService.Services;
 
 namespace NotificationService

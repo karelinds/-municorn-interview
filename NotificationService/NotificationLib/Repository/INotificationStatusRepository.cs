@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NotificationLib.Notification;
 
-namespace NotificationLib
+namespace NotificationLib.Repository
 {
     //note: мы не сохраняем само сообщение, т.к. в тз это не требуется.
     //Если же это потребудется, то сами сообщения лучше хранить в отдельной бд/таблице.

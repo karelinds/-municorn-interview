@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using FluentValidation;
 using NotificationLib.Message;
 using NotificationLib.Notification;
+using NotificationLib.Repository;
 using ValidationException = FluentValidation.ValidationException;
 
 namespace NotificationLib

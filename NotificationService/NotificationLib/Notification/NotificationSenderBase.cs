@@ -9,7 +9,7 @@ namespace NotificationLib.Notification
         where TMessage : class
     {
         private const string ErrorMessage = "Задача провалена успешно";
-        private readonly Random random = new Random();
+        private readonly Random random = new();
         private readonly ILogger _logger;
 
         protected NotificationSenderBase(ILogger logger)
